@@ -1,0 +1,33 @@
+{
+  "name": "powerlocalhost",
+  "version": "1.0.0",
+  "description": "An easy tool for hosting your files on localhost.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarush-paul/powerlocalhost.git"
+  },
+  "keywords": [
+    "localhost",
+    "nodejs",
+    "cli"
+  ],
+  "author": "Aarush Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aarush-paul/powerlocalhost/issues"
+  },
+  "homepage": "https://github.com/aarush-paul/powerlocalhost#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "express": "^4.17.1",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0"
+  }
+}
