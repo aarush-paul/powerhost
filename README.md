@@ -7,14 +7,10 @@
   <a href="https://github.com/aarush-paul/powerlocalhost/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/aarush-paul/powerlocalhost/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/aarush-paul/PowerLocalHost" />
-  </a>
 </p>
 
 > An easy tool for hosting your files on localhost.
 
-### 🏠 [Homepage](https://github.com/aarush-paul/powerlocalhost#readme)
 
 ## Install
 
@@ -32,7 +28,7 @@ npm start
 
 👤 **Aarush Paul**
 
-* Website: aarush-paul.github.io
+* Website: [aarush-paul.github.io](https://aarush-paul.github.io)
 * Github: [@aarush-paul](https://github.com/aarush-paul)
 
 ## 🤝 Contributing
@@ -49,4 +45,3 @@ Copyright © 2021 [Aarush Paul](https://github.com/aarush-paul).<br />
 This project is [ISC](https://github.com/aarush-paul/powerlocalhost/blob/master/LICENSE) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
