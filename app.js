@@ -69,12 +69,17 @@ const host = () => {
     ])
     .then((answer) => {
       if (!answer.port) {
-        console.log('Please enter a valid number');
+        console.log(chalk.bgRed.white.bold('Please enter a valid number'));
         console.log(' ');
         host();
       } 
 	    else if (answer.port > '65535'){
-		    console.log('A port number should be between 0 to 65535');
+		    console.log(chalk.bgRed.white.bold('A port number should be between 0 to 65535'));
+        console.log(' ');
+		    host();
+	    }
+		else if (answer.port < '0'){
+		    console.log(chalk.bgRed.white.bold('A port number should be between 0 to 65535'));
         console.log(' ');
 		    host();
 	    }
@@ -112,7 +117,7 @@ const host = () => {
           	};
          });
           app.listen(PORT, () =>
-           console.log(chalk.bgGreen.white.bold(`Webpage hosted at http://localhost:${PORT}\n Press Ctrl + C anytime to stop hosting your files.`)));
+           console.log(chalk.bgGreen.white.bold(`Webpage hosted at http://localhost:${PORT}\nPress Ctrl + C anytime to stop hosting your files.`)));
 		      	}
 		    }, 1000);
       };
