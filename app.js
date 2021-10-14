@@ -25,7 +25,7 @@ inquirer
       name: 'theme',
       message: 'Please select an option: ',
       choices: [
-        'Start hosting my files on localhost',
+        'Start hosting my files',
         'Report a bug',
         'Credits',
       ],
@@ -33,12 +33,13 @@ inquirer
   ])
   
 	.then((answer) => {
-		if (answer.theme === 'Start hosting my files on localhost'){
-      console.log(chalk.bgCyan.white.bold('Please open the folder named public at'));
-      console.log(chalk.bgCyan.white.bold(__dirname, 'in your file manager and put your files'));
-      console.log(chalk.bgCyan.white.bold('which are to be hosted. Make sure that there is an index.html and a 404.html.'));
-      console.log(' ');
-			host();
+		if (answer.theme === 'Start hosting my files'){
+      console.log(' ')
+        console.log(chalk.bgCyan.white.bold('Please open the folder named public at'));
+        console.log(chalk.bgCyan.white.bold(__dirname, 'in your file manager and put your files'));
+        console.log(chalk.bgCyan.white.bold('which are to be hosted. Make sure that there is an index.html and a 404.html.'));
+        console.log(' ');
+        host();
 		};
 		if (answer.theme === 'Report a bug'){
 			console.log(' ');
@@ -58,6 +59,31 @@ inquirer
 	
 };
 
+const hosttype = () => {
+  inquirer
+    .prompt([
+      {
+        name: 'hostype',
+        type: 'list',
+        message: 'Please select the type of hosting you want:',
+        choices: [
+          'Localhost (for testing your webpage on this device)',
+          'Ngrok (for testing your webpage on other device)',
+        ],
+      },
+    ])
+    .then((answer) => {
+      if (answer.hostype === 'Localhost (for testing your webpage on this device)'){
+        
+      };
+      if (answer.hostype === 'Ngrok (for testing your webpage on other device)'){
+        ngrok();
+      };
+    });
+};
+
+
+
 const host = () => {
   inquirer
     .prompt([
@@ -74,12 +100,12 @@ const host = () => {
         host();
       } 
 	    else if (answer.port > '65535'){
-		    console.log(chalk.bgRed.white.bold('A port number should be between 0 to 65535'));
+		    console.log(chalk.bgRed.white.bold('A port number should be between 1024 to 65535'));
         console.log(' ');
 		    host();
 	    }
-		else if (answer.port < '0'){
-		    console.log(chalk.bgRed.white.bold('A port number should be between 0 to 65535'));
+		else if (answer.port < '1024'){
+		    console.log(chalk.bgRed.white.bold('A port number should be between 1024 to 65535'));
         console.log(' ');
 		    host();
 	    }
@@ -116,8 +142,7 @@ const host = () => {
           	  return;
           	};
          });
-          app.listen(PORT, () =>
-           console.log(chalk.bgGreen.white.bold(`Webpage hosted at http://localhost:${PORT}\nPress Ctrl + C anytime to stop hosting your files.`)));
+          app.listen(PORT);
 		      	}
 		    }, 1000);
       };
