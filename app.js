@@ -1,22 +1,24 @@
-const chalk = require('chalk');
-const clear = require('clear');
-const figlet = require('figlet');
 
-
-clear();
-
-console.log(
-  chalk.blue.bold(
-    figlet.textSync('PowerLocalHost')
-  )
-);
-console.log(chalk.bgBlue.underline.bold('Tool created by Aarush Paul'));
-console.log(chalk.blue(' '));
-
-'use strict';
-const  inquirer = require('inquirer');
+  const chalk = require('chalk');
+  const clear = require('clear');
+  const figlet = require('figlet');
+  
+  
+  clear();
+  
+  console.log(
+    chalk.blue.bold(
+      figlet.textSync('PowerLocalHost')
+    )
+  );
+  console.log(chalk.bgBlue.underline.bold('Tool created by Aarush Paul'));
+  console.log(chalk.blue(' '));
+  
+  'use strict';
+  const  inquirer = require('inquirer');
 
 const startApp = () => {
+
 
 inquirer
   .prompt([
@@ -59,28 +61,6 @@ inquirer
 	
 };
 
-const hosttype = () => {
-  inquirer
-    .prompt([
-      {
-        name: 'hostype',
-        type: 'list',
-        message: 'Please select the type of hosting you want:',
-        choices: [
-          'Localhost (for testing your webpage on this device)',
-          'Ngrok (for testing your webpage on other device)',
-        ],
-      },
-    ])
-    .then((answer) => {
-      if (answer.hostype === 'Localhost (for testing your webpage on this device)'){
-        
-      };
-      if (answer.hostype === 'Ngrok (for testing your webpage on other device)'){
-        ngrok();
-      };
-    });
-};
 
 
 
@@ -143,6 +123,7 @@ const host = () => {
           	};
          });
           app.listen(PORT);
+          console.log(chalk.bgGreen.white.bold(`Webpage hosted at http://localhost:${PORT}\nPress Ctrl + C to stop hosting your files`));
 		      	}
 		    }, 1000);
       };
