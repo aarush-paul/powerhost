@@ -11,7 +11,10 @@
 
 > An easy tool for hosting your files on localhost.
 
-
+## Download
+```sh
+git clone https://github.com/aarush-paul/powerlocalhost.git
+```
 ## Install
 
 ```sh
