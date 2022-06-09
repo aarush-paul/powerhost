@@ -8,7 +8,7 @@
   
   console.log(
     chalk.blue.bold(
-      figlet.textSync('PowerLocalHost')
+      figlet.textSync('PowerHost')
     )
   );
   console.log(chalk.bgBlue.underline.bold('Tool created by Aarush Paul'));
@@ -45,7 +45,7 @@ inquirer
 		};
 		if (answer.theme === 'Report a bug'){
 			console.log(' ');
-			console.log(chalk.bgRed.white.bold('Please go to https://github.com/aarush-paul/powerlocalhost/issues and describe the bug.'));
+			console.log(chalk.bgRed.white.bold('Please go to https://github.com/aarush-paul/powerhost/issues and describe the bug.'));
 			console.log(' ');
 			startApp();
 		};

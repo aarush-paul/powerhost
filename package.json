@@ -1,5 +1,5 @@
 {
-  "name": "powerlocalhost",
+  "name": "powerhost",
   "version": "1.0.0",
   "description": "An easy tool for hosting your files on localhost.",
   "main": "app.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aarush-paul/powerlocalhost.git"
+    "url": "git+https://github.com/aarush-paul/powerhost.git"
   },
   "keywords": [
     "localhost",
@@ -19,9 +19,9 @@
   "author": "Aarush Paul",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aarush-paul/powerlocalhost/issues"
+    "url": "https://github.com/aarush-paul/powerhost/issues"
   },
-  "homepage": "https://github.com/aarush-paul/powerlocalhost#readme",
+  "homepage": "https://github.com/aarush-paul/powerhost#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
