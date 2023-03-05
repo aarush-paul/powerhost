@@ -26,7 +26,7 @@
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.0",
     "network-address": "^1.1.2"
